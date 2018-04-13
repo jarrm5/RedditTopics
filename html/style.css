@@ -1,0 +1,278 @@
+html body {
+    font-size: 10px;
+    font-family: josefin sans, sans-serif
+}
+
+body .container {
+    margin: auto;
+    width: 95%;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+body a {
+    color: #000
+}
+
+body a:hover {
+    color: #000;
+    text-decoration: none
+}
+
+body a:active {
+    color: #000;
+    text-decoration: none
+}
+
+@media (min-width: 480px) {
+    html body {
+        font-size: 12px
+    }
+
+    body .container {
+        width: 90%;
+        padding-top: 30px;
+        padding-bottom: 30px
+    }
+}
+
+@media (min-width: 768px) {
+    html body {
+        font-size: 14px
+    }
+
+    body .container {
+        width: 80%;
+        padding-top: 50px
+    }
+}
+
+@media (min-width: 992px) {
+    html body {
+        font-size: 16px
+    }
+
+    body .container {
+        width: 70%;
+        padding-top: 80px
+    }
+}
+
+@media (min-width: 1200px) {
+    body .container {
+        width: 60%
+    }
+}
+
+.active {
+    color: #d8315b;
+    border-bottom: 2px solid #d8315b
+}
+
+.top {
+    overflow: auto
+}
+
+#search-bar, #news-sources, #buttons {
+    margin: 25px 50px;
+}
+
+#search-bar {
+    text-align:left;
+
+}
+
+#buttons{
+    text-align:left;
+}
+#buttons input{
+    width: 120px;
+    font-weight:bold;
+}
+#buttons input:hover{
+    background-color: #F0C508;
+}
+
+.top #website-title {
+    font-size: 2em;
+    float: left
+}
+
+.top #view-mode {
+    font-size: 1em;
+    padding-top: 1em;
+    float: right
+}
+
+.top #view-mode div {
+    float: right;
+    margin-left: .5em;
+    cursor: pointer
+}
+
+.top #caption {
+    padding-top: 3.5em
+}
+
+.top #filter {
+    font-size: 1.2em;
+    padding-top: 1em
+}
+
+.top #filter div {
+    float: left;
+    margin-right: .8em;
+    cursor: pointer
+}
+
+@media (min-width: 480px) {
+    .top .view-mode {
+        padding-top: .95em;
+        float: right
+    }
+}
+
+@media (min-width: 768px) {
+    .top #website-title {
+        font-size: 2.4em
+    }
+
+    .top #view-mode {
+        font-size: 1.2em;
+        padding-top: 1em
+    }
+}
+
+.story-list {
+    padding-top: 1em;
+    display: none;
+    min-height: 100%
+}
+
+#all-story-list {
+    display: block
+}
+
+.story {
+    width: 100%;
+    overflow: auto;
+    overflow-y: visible;
+    margin-top: 1.2em
+}
+
+.index {
+    float: left;
+    width: 1.8em;
+    font-size: 1.2em
+}
+
+.image {
+    float: left
+}
+
+.image img {
+    width: 90px;
+    height: 60px;
+    object-fit: cover
+}
+
+.info {
+    float: left;
+    margin-left: .5em;
+    width: calc(100% - 18em)
+}
+
+.info .title {
+    display: block;
+    font-size: 1.2em
+}
+
+.info .author, .info .pub {
+    padding: 5px 0
+}
+
+.info .title:focus, .info .author:focus, .info .pub:focus {
+    text-decoration: none;
+    color: #333
+}
+
+.recommends {
+    float: right;
+    font-size: 1.2em
+}
+
+.recommends img {
+    width: 1.1em;
+    margin-bottom: .3em
+}
+
+@media (min-width: 768px) {
+    .image img {
+        width: 120px;
+        height: 80px
+    }
+}
+
+.compact .story {
+    margin-top: .5em
+}
+
+.compact .index {
+    font-size: 1em
+}
+
+.compact .image {
+    display: none
+}
+
+.compact .info {
+    width: 80%
+}
+
+.compact .info .title {
+    font-size: 1em
+}
+
+.compact .info .author, .compact .info .separator, .compact .info .pub {
+    display: none
+}
+
+.compact .recommends {
+    font-size: 1em
+}
+
+.load-more {
+    width: 8em;
+    font-size: 1.5em;
+    padding: .5em .5em .2em;
+    text-align: center;
+    margin: .8em auto 0;
+    color: #d8315b;
+    cursor: pointer;
+    display: none
+}
+
+#all-load {
+    display: block
+}
+
+.footer {
+    margin-top: 2em;
+    overflow: auto
+}
+
+.footer .left {
+    float: left
+}
+
+.footer .left a {
+    color: #d8315b
+}
+
+.footer .right {
+    float: right
+}
+
+.footer .right a {
+    color: #02b875
+}
