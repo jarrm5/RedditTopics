@@ -3,6 +3,11 @@ var SEARCH_ENGINE_ID = "";
 var ENDPOINT = "https://www.googleapis.com/customsearch/v1?";
 
 $(document).ready(function(){
+
+    $('#btn-reset').on('click', function(){
+        $('#inp-topic').val('');
+    });
+
 	$('#btn-search').on('click',function(){
         var input = $('#inp-topic').val();
         if(input === ""){
@@ -10,9 +15,24 @@ $(document).ready(function(){
         }
         else{
             //Need to get csv parsing results here
-            sendHTTPRequest(input);
+            pythonParseRedditThreads(input);
+            //sendHTTPRequest(input);
         }
     });
+
+    function pythonParseRedditThreads(keyword){
+        $.ajax({
+            type: 'POST',
+            url: '../python/SortingTopics.py',
+            data: { param: keyword },
+        }).done(function(result){
+            console.log('script succesfully executed.');
+            console.log(result);
+        }).fail(function(){
+            console.log('Failed to load SortingTopics.py');
+        });
+        
+    }
     
     function sendHTTPRequest(query){
         $.ajax({
