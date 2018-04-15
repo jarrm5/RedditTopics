@@ -12,31 +12,41 @@ Headers are:
 
 Explanations of the dataset:
 
-· text: text of the thread
+ï¿½ text: text of the thread
 
-· title: title of the thread
+ï¿½ title: title of the thread
 
-· url: url of the thread
+ï¿½ url: url of the thread
 
-· id: unique ID of the thread
+ï¿½ id: unique ID of the thread
 
-· subreddit: subreddit that the thread belongs to
+ï¿½ subreddit: subreddit that the thread belongs to
 
-· meta: meta tag assigned to the subreddit of the thread in config.json
+ï¿½ meta: meta tag assigned to the subreddit of the thread in config.json
 
-· time: timestamp of the thread
+ï¿½ time: timestamp of the thread
 
-· author: username of the author of the thread
+ï¿½ author: username of the author of the thread
 
-· ups: number of ups the thread has received
+ï¿½ ups: number of ups the thread has received
 
-· downs: number of downs the thread has received
+ï¿½ downs: number of downs the thread has received
 
-· authorlinkkarma: the author's link karma
+ï¿½ authorlinkkarma: the author's link karma
 
-· authorcommentkarma: the author's comment karma
+ï¿½ authorcommentkarma: the author's comment karma
 
-· authorisgold: 1 if the author has gold status, 0 otherwise
+ï¿½ authorisgold: 1 if the author has gold status, 0 otherwise
 
 References
 https://github.com/linanqiu/reddit-dataset
+
+APPLICATION DEPENDENCIES
+
+1. Web Server
+Since this application makes REST calls over HTTP, a web server like Apache is required to run the application.
+
+2. Python version 3.2+
+The application uses a python script to parse reddit threads contained in a csv file.
+Since we are using an ajax call in javascript to execute this python script, an extra client-server layer is required.
+The application uses a lightweight web framework called Flask which requires python version 3.2+
