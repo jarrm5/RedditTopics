@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>RedditHotTopics</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='../js/gapi.js'></script>
 </head>
 <body>
@@ -15,15 +19,15 @@
         </div>
     </div>
 
-        <div id="search-bar">
-            <input placeholder='Search a news topic..' type="text" id="inp-topic">
-        </div>
+    <div id="search-bar">
+        <input placeholder='Search a news topic..' type="text" id="inp-topic">
+    </div>
     <div id="news-sources"></div>
 
 
     <div id="buttons">
-        <input id="btn-search" class='btn btn-sm' type='submit' name='search' value='Search' />
-        <input id="btn-reset" class='btn btn-sm' type='submit' name='reset' value='Reset' />
+        <input id="btn-search" class='btn btn-sm' type='submit' name='search' value='Search'/>
+        <input id="btn-reset" class='btn btn-sm' type='submit' name='reset' value='Reset'/>
         <!--<button class='btn btn-sm' id="btn-search">Search</button>
         <button class='btn btn-sm' id="btn-reset">Reset</button>-->
     </div>
@@ -34,29 +38,26 @@
 
     <ul class="list-unstyled">
         <li class="media">
-            <img class="mr-3" src="black-darth-vader-64.jpg" alt="Generic placeholder image">
+            <img class="mr-3" src="black-darth-vader-64.jpg" alt="Image from the google">
             <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                we can put the details here we can put the details here vwe can put the details herewe can put the details herewe can put the details herewe can put the details herewe can put the details herewe can put the details herewe can put the details herewe can put the details here
+                <h2 class="mt-0 mb-1">title of the topic</h2>
+                By<strong> Christopher Watkins</strong><br>
+                Date<br>
+                <i class="fa fa-thumbs-up"></i>Number of ups<br>
+                Description of the topic
             </div>
         </li>
         <li class="media my-4">
-            <img class="mr-3" src="black-darth-vader-64.jpg" alt="Generic placeholder image">
+            <img class="mr-3" src="black-darth-vader-64.jpg" alt="Image from the google">
             <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                we can put the details here we can put the details here vwe can put the details herewe can put the details herewe can put the details herewe can put the details herewe can put the details herewe can put the details herewe can put the details herewe can put the details here
-            </div>
-        </li>
-        <li class="media">
-            <img class="mr-3" src="black-darth-vader-64.jpg" alt="Generic placeholder image">
-            <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                we can put the details here we can put the details here vwe can put the details herewe can put the details herewe can put the details herewe can put the details herewe can put the details herewe can put the details herewe can put the details herewe can put the details here
+                <h2 class="mt-0 mb-1">title of the topic</h2>
+                By<strong> Christopher Watkins</strong><br>
+                Date<br>
+                <i class="fa fa-thumbs-up"></i>Number of ups<br>
+                Description of the topic
             </div>
         </li>
     </ul>
-
-
 
 
 </div>
