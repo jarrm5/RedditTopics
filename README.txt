@@ -1,4 +1,4 @@
-The goal is to process the Reddit threads dataset to understand the hot topic people are talking about.
+﻿The goal is to process the Reddit threads dataset to understand the hot topic people are talking about.
 
 After extracting top 10 news out of your dataset, use Google Api to search through the google and find the most related pictures to the extracted news. 
 You should also consider the time in which the topic is related about to find the pictures related to that topic on special time saved on the dataset
@@ -50,3 +50,6 @@ Since this application makes REST calls over HTTP, a web server like Apache is r
 The application uses a python script to parse reddit threads contained in a csv file.
 Since we are using an ajax call in javascript to execute this python script, an extra client-server layer is required.
 The application uses a lightweight web framework called Flask which requires python version 3.2+
+
+##Youtube Link
+https://youtu.be/55gj878KKKg
