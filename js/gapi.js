@@ -1,5 +1,5 @@
-var API_KEY = "";
-var SEARCH_ENGINE_ID = "";
+var API_KEY = "AIzaSyBvoFuR843aB45J6E2Oq82us7jVd3IBpuo";
+var SEARCH_ENGINE_ID = "011609697797207488690:mdejvlqagxe";
 var ENDPOINT = "https://www.googleapis.com/customsearch/v1?";
 
 $(document).ready(function(){
@@ -15,15 +15,15 @@ $(document).ready(function(){
         }
         else{
             //Need to get csv parsing results here
-            pythonParseRedditThreads(input);
-            //sendHTTPRequest(input);
+            //pythonParseRedditThreads(input);
+            sendHTTPRequest(input);
         }
     });
 
     function pythonParseRedditThreads(keyword){
         $.ajax({
-            type: 'POST',
-            url: '../python/SortingTopics.py',
+            type: 'GET',
+            url: 'http://localhost:5000/FinalCode.py',
             data: { param: keyword },
         }).done(function(result){
             console.log('script succesfully executed.');
@@ -44,10 +44,13 @@ $(document).ready(function(){
                 console.log("No results found.");
             }
             else{
-                for (var i = 0; i < 10; i++) {
+                /*for (var i = 0; i < 10; i++) {
                     var imageURL = response.items[i].pagemap.cse_image[0].src;
                     console.log(imageURL);
-                }
+                }*/
+                $('#result1').attr('src',response.items[0].pagemap.cse_image[0].src);
+                $('#result2').attr('src',response.items[1].pagemap.cse_image[0].src);
+
             }
         }).fail(function() {
             console.log('HTTP call failed.');
